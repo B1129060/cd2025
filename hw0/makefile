@@ -1,10 +1,16 @@
 CC = gcc
 OBJS = main.o
 
-all: test
+all: hw0
 
 %.o: %.c
   $(CC) -c -o $@ $<
 
-test: $(OBJS)
+hw0: $(OBJS)
   $(CC) -o $@ $^
+
+.PHONY: clean
+clean:
+  rm hw0 *.o
+
+
