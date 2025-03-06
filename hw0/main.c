@@ -8,11 +8,11 @@ typedef struct node{
     int count;
 } node;
 
-node* cons(char);
+node* cons(char); //constructor
 
 int main()
 {
-    node** pos = (node**)malloc(sizeof(node*)*128);//melloc
+    node** pos = (node**)malloc(sizeof(node*)*128);
     for(int i = 0; i < 128; i++){
         pos[i] = NULL;
     }
