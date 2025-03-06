@@ -51,7 +51,7 @@ int main()
         cur = cur->next;
     }
     
-    printf("enter char: "); //bonus: find existing character(find node pointers from array "pos" directly, Time complexity O(1))
+    printf("enter char: "); //bonus: find existing character(get node pointers from array "pos" directly, Time complexity O(1))
     in = getchar();
     if(pos[in] == NULL){
         printf("\nchar not found.\n");
