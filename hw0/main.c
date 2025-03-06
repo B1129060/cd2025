@@ -39,7 +39,7 @@ int main()
     
     fclose(fp);
     
-    cur = root->next;//output
+    cur = root->next; //output
     while(cur != NULL){
         if(cur->c == '\n'){
             printf("\'\\n\' : %d\n", cur->count);
@@ -51,7 +51,7 @@ int main()
         cur = cur->next;
     }
     
-    printf("enter char: ");//bonus(find node pointers from array "pos" directly, Time complexity O(1))
+    printf("enter char: "); //bonus: find existing character(find node pointers from array "pos" directly, Time complexity O(1))
     in = getchar();
     if(pos[in] == NULL){
         printf("\nchar not found.\n");
@@ -65,7 +65,7 @@ int main()
         }
     }
     
-    cur = root;//free
+    cur = root; //free
     root = root->next;
     while(root != NULL){
         free(cur);
