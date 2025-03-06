@@ -1,5 +1,5 @@
 CC = gcc
-OBJS = a.o b.o c.o
+OBJS = main.o
 
 all: test
 
