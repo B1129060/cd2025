@@ -4,13 +4,12 @@ OBJS = main.o
 all: hw0
 
 %.o: %.c
-  $(CC) -c -o $@ $<
+        $(CC) -c -o $@ $<
 
 hw0: $(OBJS)
-  $(CC) -o $@ $^
+        $(CC) -o $@ $^
 
 .PHONY: clean
 clean:
-  rm hw0 *.o
-
+        rm hw0 *.o
 
